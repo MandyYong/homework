@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>任务07</title>
+	<meta charset="utf-8">
+	<style>	
+		#top{
+			width:1387.5px;
+			height:30px;
+			background-color:#f4f4f4;
+			line-height:30px;
+		}
+		#top>ul{
+			margin-top:0px;
+			display:inline-block;
+		}
+		#top>ul>li{
+			line-height:30px;
+			padding-left:5px;
+			display:inline-block;
+		}
+		#top>ul>li>a:link{
+			color:#000000;
+			text-decoration:none;
+		}
+		#top>ul>li>img{
+			position:absolute;
+			top:5px;
+		}
+		.top_left{
+			position:absolute;
+			left:50px;
+		}
+		.top_right{
+			position:absolute;
+			left:1000px;
+		}
+		#title{
+			width:1317.5px;
+			height:100px;
+			margin-left:75px;
+		}
+		form{
+			margin-top:5px;
+			margin-bottom:5px;
+			display:inline;
+		}
+		.red{
+			margin-left:175px;
+			width:390px;
+			height:36px;
+			border:2px solid #f83838;
+			position:absolute;
+			top:65px;
+			padding-left:10px;
+			color:#d4d4d4;
+		}
+		.button{
+			background-color:#f83838;
+			border:1px solid #f83838;
+			width:80px;
+			height:42px;
+			position:absolute;
+			top:65px;
+			left:860px;
+		}
+		.search{
+			position:absolute;
+			top:75px;
+			left:885px;
+			text-decoration:none;
+			color:#ffffff;	
+		}
+		.shop{
+			width:150px;
+			height:42px;
+			background-color:#f5f5f5;
+			border:#e3e3e3 solid 1px;
+			position:absolute;
+			top:65px;
+			left:1215px;
+		}
+		#cover{
+			height:42px;
+			position:absolute;
+			left:1235px;
+			top:75px;
+			line-height:21px;
+		}
+		#cover>img{
+			line-height:42px;
+		}
+		#cover>a{
+			color:#f83838;
+			text-decoration:none;
+		}
+		#lead{
+			width:1317.5px;
+			height:33px;
+			padding-left:70px;
+			border-bottom:2px solid #e00304;
+		}
+		#lead>ul>li{
+			padding-right:70px;
+			display:inline-block;
+		}
+		.visit{
+			padding:5px 15px;
+			background-color:#fd0304;
+			border-radius:10%;
+		}
+		#lead>ul>li>a{
+			text-decoration:none;
+			color:#000000;
+		}
+		#p{
+			line-height:80px;
+			width:1307.5px;
+			height:80px;
+			padding-left:80px;
+			background-color:#f4f4f4;
+		}
+		#shenti{
+			background-color:#f4f4f4;
+			height:697px;
+			width:1307.5px;
+			padding-left:80px;
+			float:left;
+		}
+		#left{
+			float:left;
+		}
+		#biaotou{
+			background-color:#ffffff;
+			line-height:30px;
+			width:120px;
+			height:30px;
+			margin-left:65px;
+			padding-left:30px;
+		}
+		.img{
+			position:absolute;
+			top:269px;
+			left:125px;
+		}
+		#left>ul{
+			background-color:#ffffff;
+			list-style-type:none;
+			width:126px;
+			height:634px;
+			margin-left:39px;
+			padding-left:50px;
+		}
+		.second{
+			color:#ff2c18;
+		}
+		#left>ul>li{
+			padding-top:20px;
+		}
+		#right{
+			background-color:#ffffff;
+			width:955px;
+			margin-left:30px;
+			padding-left:25px;
+			padding-top:25px;
+			float:left;
+			text-align:center;
+		}
+		#lajiao{
+			background-color:#ffffff;
+			width:210px;
+			height:300px;
+			border:1px solid #dbdbdb;
+			float:left;
+			margin-right:25px;
+			margin-bottom:25px;
+		}
+		#baixiangguo{
+			width:210px;
+			height:300px;
+			border:1px solid #dbdbdb;
+			float:left;
+			margin-right:25px;
+			margin-bottom:25px;
+		}
+		#jiu{
+			width:210px;
+			height:300px;
+			border:1px solid #dbdbdb;
+			float:left;
+			margin-right:25px;
+			margin-bottom:25px;
+		}
+		#songzi{
+			width:210px;
+			height:300px;
+			border:1px solid #dbdbdb;
+			float:left;
+			margin-right:25px;
+			margin-bottom:25px;
+		}
+		#last{
+			float:left;
+			width:1388px;
+			height:200px;
+			background-color:#2e2e2e;
+		}
+		#seive>ul{
+			padding-left:120px;
+			display:inline-block;
+			padding-right:60px;
+		}
+		#seive>ul>li{
+			color:#d5d5d5;
+			list-style-type:none;
+		}
+		#seive>ul>li>a{
+			color:#d5d5d5;
+			text-decoration:none;
+		}
+		#xian{
+			width:1180px;
+			height:1px;
+			margin-left:120px;
+			background-color:#9e9e9e;
+		}
+		#bottom{
+			color:#9e9e9e;
+			text-align:center;
+			float:left;
+			padding-left:320px;
+		}
+		#bottom>ul>li{
+			display:inline-block;
+			color:#9e9e9e;
+		}
+		#bottom>ul>li>a{
+			color:#9e9e9e;
+			text-decoration:none;
+		}
+	</style>
+</head>
+<body>
+	<div id="top">
+		<ul class="top_left">
+			<li>我的收藏</li>
+			<li>E族之家手机版</li>
+			<li><img src="img/qq.jpg"/></li>
+			<li>328203328</li>
+		</ul>
+		<ul class="top_right">
+			<li>扫描加入</li>
+			<li>欢迎来到E族之家.</li>
+			<li><a href="#">请登录</a></li>
+			<li>|</li>
+			<li><a href="#">注册</a></li>
+		</ul>
+	</div>
+	<div id="title">
+		<img src="img/ezu.jpg"/>
+		<form>
+			<input class="red" type="text" value=" 请输入关键词！"/>
+			<input class="button" type="button"/>
+			<a class="search" href="#">搜索</a>
+			<input class="shop" type="button"/>
+			<div id="cover">
+				<img src="img/car.jpg"/>购物车(<a href="#">0</a>)件
+			</div>
+		</form>
+	</div>
+	<div id="lead">
+		<ul>
+			<li><a href="#">首页</a></li>
+			<li><a href="#">E族生活</a></li>
+			<li><a href="#">E族服务</a></li>
+			<li><a class="visit" style="color:#ffffff;" href="#">E族爱心</a></li>
+		</ul>
+	</div>
+	<div id="p">当前位置：E族爱心>食品</div>
+	<div id="shenti">
+		<div id="left">
+			<div id="biaotou">全部分类</div>
+			<img class="img" src="img/heng.jpg"/>
+			<ul>
+				<li class="second">>食品</li>
+				<li>>生活用品</li>
+			</ul>
+		</div>
+		<div id="right">
+			<div id="lajiao">
+				<img src="img/lajiao.jpg"/>
+				<p>精品辣椒100g</p>
+				<p>￥90.00</p>
+			</div>
+			<div id="baixiangguo">
+				<img src="img/baixiang.jpg"/>
+				<p>特级百香果3斤</p>
+				<p>￥90.00</p>
+			</div>
+			<div id="jiu">
+				<img src="img/jiu.jpg"/>
+				<p>万威啤酒500ml</p>
+				<p>￥90.00</p>
+			</div>
+			<div id="songzi">
+				<img src="img/songzi.jpg"/>
+				<p>万威啤酒500ml</p>
+				<p>￥90.00</p>
+			</div>
+			<div id="lajiao">
+				<img src="img/lajiao.jpg"/>
+				<p>精品辣椒100g</p>
+				<p>￥90.00</p>
+			</div>
+			<div id="baixiangguo">
+				<img src="img/baixiang.jpg"/>
+				<p>特级百香果3斤</p>
+				<p>￥90.00</p>
+			</div>
+			<div id="jiu">
+				<img src="img/jiu.jpg"/>
+				<p>万威啤酒500ml</p>
+				<p>￥90.00</p>
+			</div>
+			<div id="songzi">
+				<img src="img/songzi.jpg"/>
+				<p>万威啤酒500ml</p>
+				<p>￥90.00</p>
+			</div>
+		</div>
+	</div>
+	<div id="last">
+		<div id="seive">
+			<ul>
+				<li>新手上路</li>
+				<li><a href="#">售后流程</a></li>
+				<li><a href="#">购物流程</a></li>
+				<li><a href="#">订购方式</a></li>
+			</ul>
+			<ul>
+				<li>配送方式</li>
+				<li><a href="#">货到付款区域</a></li>
+				<li><a href="#">配送支付查询</a></li>
+				<li><a href="#">支付方式说明</a></li>
+			</ul>
+			<ul>
+				<li>购物方式</li>
+				<li><a href="#">常见问题</a></li>
+				<li><a href="#">订购流程</a></li>
+				<li><a href="#">注册新会员</a></li>
+			</ul>
+			<ul>
+				<li>售后服务</li>
+				<li><a href="#">退换货原则</a></li>
+				<li><a href="#">售后服务保证</a></li>
+				<li><a href="#">换货流程</a></li>
+			</ul>
+			<ul>
+				<li>关于我们</li>				
+				<li><a href="#">网站故障报告</a></li>
+				<li><a href="#">联系我们</a></li>
+				<li><a href="#">投诉与建议</a></li>
+			</ul>
+		</div>
+		<div id="xian"></div>
+		<div id="bottom">
+			<ul>
+				<li><a href="#">E族生活</a></li>
+				<li>|</li>
+				<li><a href="#">居家维修保养</a></li>
+				<li>|</li>
+				<li><a href="#">住宿优惠信息</a></li>
+				<li>|</li>
+				<li><a href="#">出行接送</a></li>
+				<li>|</li>
+				<li><a href="#">E族活动</a></li>
+				<li>|</li>
+				<li><a href="#">E族爱心</a></li>
+				<li>|</li>
+				<li><a href="#">积分商城</a></li>
+			</ul>
+			<ul>
+				<li>©</li>
+				<li>2017-2018</li>
+				<li>E族之家</li>
+				<li>版权所有，并保留所有权利</li>
+				<li>UCP备案证书号：粤ICP备17127392号</li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
